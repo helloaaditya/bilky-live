@@ -169,7 +169,7 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="items-center justify-center mt-8">
+                <div className="items-center">
                     <div className="text-gray-300 text-sm text-center">
                         &copy; {currentYear} Bilky Live. All rights reserved.
                     </div>
