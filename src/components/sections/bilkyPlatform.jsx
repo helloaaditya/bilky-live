@@ -21,7 +21,7 @@ const BilkyPlatform = () => {
                     </div>
 
                     <div className="p-4 md:p-8">
-                        <div className="space-y-6 md:space-y-10">
+                        <div className="space-y-6 md:space-y-10 text-purple-600">
                             {[
                                 {
                                     icon: Users,
