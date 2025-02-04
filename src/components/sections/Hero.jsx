@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { GoGoal } from 'react-icons/go';
 import { BsAndroid, BsHeartFill } from 'react-icons/bs';
 import { MdNearMe } from 'react-icons/md';
-import StatsSection from './StatsSection';
-import Footer from './Footer';
+import StatsSection from '../sections/StatsSection';
+import Footer from '../sections/footer';
 
 const ModernHero = () => {
     const [isVisible, setIsVisible] = useState(false);
