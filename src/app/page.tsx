@@ -1,5 +1,5 @@
 import ModernHero from '@/components/sections/Hero';
-import ModernNavbar from '@/components/sections/Navbar';
+import ModernNavbar from '../components/sections/navbar';
 
 export default function Home() {
   return (
