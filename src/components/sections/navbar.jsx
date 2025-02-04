@@ -26,7 +26,7 @@ const ModernNavbar = () => {
         <>
             <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg py-2' : 'bg-gradient-to-r from-pink-500 to-purple-600 py-4'
                 }`}>
-                <div className="container mx-8 px-4">
+                <div className="container px-4">
                     <div className="flex items-center justify-between">
                         {/* Logo */}
                         <div className="flex items-center space-x-8">
@@ -66,7 +66,7 @@ const ModernNavbar = () => {
                         </div>
 
                         {/* Right Side Items */}
-                        <div className="hidden md:flex mx-10 items-center space-x-4">
+                        <div className="hidden md:flex items-center space-x-4">
                             <Button
                                 variant="ghost"
                                 size="icon"
