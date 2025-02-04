@@ -7,6 +7,7 @@ import { BsAndroid, BsHeartFill } from 'react-icons/bs';
 import { MdNearMe } from 'react-icons/md';
 import StatsSection from '../sections/StatsSection';
 import Footer from '../sections/footer';
+import BilkyPlatform from '../sections/bilkyPlatform';
 
 const ModernHero = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -38,11 +39,11 @@ const ModernHero = () => {
                                 <div className="flex flex-wrap gap-4 mb-12">
                                     <Button
                                         size="lg"
-                                        className="bg-white text-purple-900 hover:bg-white/90 rounded-full px-10 flex items-center"
+                                        className="bg-white text-green-400 hover:bg-white/90 rounded-full px-10 flex items-center"
                                         onClick={() => window.open('https://play.google.com/store', '_blank')}
                                     >
                                         <div className="flex items-center">
-                                            <Play className="w-6 h-6 mr-2 fill-current" />
+                                            <Play className="w-8 h-6 mr-2 fill-current" />
                                             <div className="flex flex-col items-start">
                                                 <span className="text-xs leading-tight font-bold">GET IT ON</span>
                                                 <span className="text-sm font-semibold ">Google Play</span>
@@ -53,7 +54,7 @@ const ModernHero = () => {
                                     <Button
                                         size="lg"
                                         variant="outline"
-                                        className="text-green-500 border-white bg-white hover:bg-white/90 rounded-full px-8 flex items-center"
+                                        className="text-purple-500 border-white w-50 h-16 bg-white hover:bg-white/90 rounded-full px-8 flex items-center"
                                     >
                                         <BsAndroid className="w-5 h-5 mr-2" />
                                         <div className="flex flex-col items-start">
@@ -83,9 +84,9 @@ const ModernHero = () => {
                             <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                                 <div className="relative">
                                     <img
-                                        src="https://frnd.app/static/media/desk_3.3f643654.webp"
+                                        src="https://firebasestorage.googleapis.com/v0/b/bilky-80c73.firebasestorage.app/o/Untitled%20design(1).gif?alt=media&token=549ae4dc-b3fb-493b-a5f5-3f78dc5b9016"
                                         alt="App Interface"
-                                        className="w-800 h-auto rounded-3xl shadow-2xl mx-auto transform hover:scale-105 transition-transform duration-500"
+                                        className="w-800 h-800 rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500 bg-tr"
                                     />
 
                                     {/* Floating Feature Cards */}
@@ -163,10 +164,10 @@ const ModernHero = () => {
                     </div>
                 </div>
             </section>
-
-           <StatsSection />
+            <BilkyPlatform />
+            <StatsSection />
             <Footer />
-            
+
             <style jsx>{`
                 @keyframes float {
                     0%, 100% { transform: translateY(0); }

@@ -53,9 +53,9 @@ const Footer = () => {
                         <p className="text-gray-300">
                             Connecting hearts worldwide through meaningful live video connections.
                         </p>
-                        <div className="">
+                        <div className="flex items-center space-x-4">
                             <Mail className="w-4 h-4 text-pink-400" />
-                            <span className="text-sm text-gray-400">support@bilkylive.com</span>
+                            <span className="text-sm text-gray-100">support@bilkylive.com</span>
                         </div>
                         <div className="flex space-x-4">
                             <a href="#" className="text-gray-300 hover:text-pink-400 transition-colors">
@@ -169,11 +169,10 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="flex items-center mt-12">
-                    <div className="text-gray-300 text-sm">
+                <div className="flex items-center mt-12 gap-4">
+                    <div className="text-gray-300 text-sm text-center">
                         &copy; {currentYear} Bilky Live. All rights reserved. 
                     </div>
-                    <br/>
                     <div className="text-gray-300 text-sm">
                         Made with ❤️ by <a href="https://bilkylive.com" className="text-pink-400 hover:text-pink-300">Bilky Live</a>
                     </div>

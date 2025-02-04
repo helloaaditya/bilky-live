@@ -31,7 +31,7 @@ const StatsSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-r from-pink-50 via-purple-50 to-pink-50 relative overflow-hidden">
+    <section className="py-10 bg-gradient-to-r from-pink-50 via-purple-50 to-pink-50 relative overflow-hidden">
       {/* Floating Hearts Background */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (

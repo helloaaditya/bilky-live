@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Heart, Bell, User, MessageCircle } from 'lucide-react';
+import { Menu, X, ChevronDown, Heart, Bell, User, MessageCircle, LanguagesIcon, Languages } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const ModernNavbar = () => {
@@ -24,28 +24,25 @@ const ModernNavbar = () => {
 
     return (
         <>
-            <nav className={`fixed w-full z-50 transition-all duration-300 ${
-                isScrolled ? 'bg-white shadow-lg py-2' : 'bg-gradient-to-r from-pink-500 to-purple-600 py-4'
-            }`}>
-                <div className="container mx-auto px-4">
+            <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg py-2' : 'bg-gradient-to-r from-pink-500 to-purple-600 py-4'
+                }`}>
+                <div className="container mx-8 px-4">
                     <div className="flex items-center justify-between">
                         {/* Logo */}
                         <div className="flex items-center space-x-8">
-                            <div className="flex items-center">
-                                <span className={`text-2xl font-bold ml-2 ${
-                                    isScrolled ? 'text-pink-500' : 'text-white'
-                                }`}>
+                            <div className="flex items-center ">
+                                <span className={`text-2xl ml-2 font-bold bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text ${isScrolled ? 'text-pink-500' : 'bg-gradient-to-r from-white to-black'
+                                    }`}>
                                     Bilky Live
                                 </span>
                             </div>
-                            
+
                             {/* Desktop Navigation */}
                             <div className="hidden md:flex items-center space-x-1">
                                 {menuItems.map((item) => (
                                     <div key={item.name} className="relative group">
-                                        <button className={`px-4 py-2 rounded-full flex items-center space-x-1 transition-colors ${
-                                            isScrolled ? 'text-gray-600 hover:text-pink-500' : 'text-white/90 hover:text-white'
-                                        }`}>
+                                        <button className={`px-4 py-2 rounded-full flex items-center space-x-1 transition-colors ${isScrolled ? 'text-gray-600 hover:text-pink-500' : 'text-white/90 hover:text-white'
+                                            }`}>
                                             <span>{item.name}</span>
                                             <ChevronDown className="w-4 h-4" />
                                         </button>
@@ -69,37 +66,38 @@ const ModernNavbar = () => {
                         </div>
 
                         {/* Right Side Items */}
-                        <div className="hidden md:flex items-center space-x-4">
-                            <Button 
-                                variant="ghost" 
+                        <div className="hidden md:flex mx-10 items-center space-x-4">
+                            <Button
+                                variant="ghost"
                                 size="icon"
                                 className={`rounded-full ${isScrolled ? 'text-gray-600 hover:text-pink-500' : 'text-white hover:text-pink-200'}`}
                             >
                                 <MessageCircle className="w-5 h-5" />
                             </Button>
-                            <Button 
-                                variant="ghost" 
+                            <Button
+                                variant="ghost"
                                 size="icon"
                                 className={`rounded-full ${isScrolled ? 'text-gray-600 hover:text-pink-500' : 'text-white hover:text-pink-200'}`}
                             >
                                 <Bell className="w-5 h-5" />
                             </Button>
                             <div className="h-6 w-px bg-gray-300"></div>
-                            <Button 
-                                className={`rounded-full ${
-                                    isScrolled 
-                                        ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white hover:opacity-90' 
+                            <Button
+                                className={`rounded-full ${isScrolled
+                                        ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white hover:opacity-90'
                                         : 'bg-white text-pink-500 hover:bg-white/90'
-                                }`}
+                                    }`}
                             >
-                                Find Love Today
+                                💖 Find Love Today
                             </Button>
-                            <Button 
+                            <Button
                                 variant="ghost"
                                 size="icon"
                                 className={`rounded-full ${isScrolled ? 'text-gray-600 hover:text-pink-500' : 'text-white hover:text-pink-200'}`}
                             >
+                                <Languages className="w-5 h-5" />
                             </Button>
+
                         </div>
 
                         {/* Mobile Menu Button */}
@@ -121,11 +119,10 @@ const ModernNavbar = () => {
                 </div>
 
                 {/* Mobile Menu */}
-                <div className={`md:hidden transition-all duration-300 ease-in-out ${
-                    isMobileMenuOpen 
+                <div className={`md:hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen
                         ? 'max-h-screen opacity-100 visible'
                         : 'max-h-0 opacity-0 invisible'
-                }`}>
+                    }`}>
                     <div className="bg-white shadow-lg px-4 py-3 space-y-3">
                         {menuItems.map((item) => (
                             <div key={item.name} className="space-y-2">
