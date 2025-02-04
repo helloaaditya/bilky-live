@@ -169,14 +169,15 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="items-center">
-                    <div className="text-gray-300 text-sm text-center">
-                        &copy; {currentYear} Bilky Live. All rights reserved.
+                <div className="flex items-center mt-12">
+                    <div className="text-gray-300 text-sm">
+                        &copy; {currentYear} Bilky Live. All rights reserved. 
                     </div>
-                    <div className="text-gray-300 text-sm text-center">
-                        Made with ❤️ by <a href="https://bilkylive.com" className="text-pink-400 hover:text-pink-500 transition-colors">Bilky Live</a>
+                    <br/>
+                    <div className="text-gray-300 text-sm">
+                        Made with ❤️ by <a href="https://bilkylive.com" className="text-pink-400 hover:text-pink-300">Bilky Live</a>
                     </div>
-                </div>
+                    </div>
             </div>
         </footer>
     );
