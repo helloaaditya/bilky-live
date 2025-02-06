@@ -1,4 +1,4 @@
-import { getAllPages } from '../lib/api';
+import { getAllPages } from '../app/page';
 
 const Sitemap = () => {};
 
