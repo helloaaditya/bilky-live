@@ -83,37 +83,11 @@ const Footer = () => {
                             </ul>
                         </div>
                     ))}
-
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold">Get the App</h3>
-                        <div className="space-y-3">
-                            {[
-                                {
-                                    icon: Play,
-                                    title: "GET IT ON",
-                                    subtitle: "Google Play",
-                                    variant: "default"
-                                },
-                                {
-                                    icon: BsAndroid,
-                                    title: "Download",
-                                    subtitle: "Android APK",
-                                    variant: "outline"
-                                }
-                            ].map((button, i) => (
-                                <Button
-                                    key={i}
-                                    size="lg"
-                                    variant={button.variant}
-                                    className={`w-full ${button.variant === "outline" ? "text-green-500 border-white bg-white hover:bg-white/90" : "bg-white text-purple-900 hover:bg-white/90"} rounded-full flex items-center justify-center`}
-                                >
-                                    <button.icon className="w-5 h-5 mr-2" />
-                                    <div className="flex flex-col items-start">
-                                        <span className="text-xs font-bold">{button.title}</span>
-                                        <span className="text-sm font-semibold">{button.subtitle}</span>
-                                    </div>
-                                </Button>
-                            ))}
+                        <h3 className="text-lg font-semibold">Download Our App</h3>
+                        <div className="space-y-4">
+                            <img src="https://media.chingari.io/apipublic/chingari-web-assets/icons/app-store.svg" alt="App Store" className="h-14 w-auto" />
+                            <img src="https://media.chingari.io/apipublic/chingari-web-assets/icons/play-store.svg" alt="Google Play" className="h-14 w-auto" />
                         </div>
                     </div>
                 </div>

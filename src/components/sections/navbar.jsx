@@ -24,14 +24,14 @@ const ModernNavbar = () => {
 
     return (
         <>
-            <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg py-2' : 'bg-gradient-to-r from-pink-500 to-purple-600 py-4'
+            <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg py-2' : 'bg-gradient-to-r from-purple-500  py-4'
                 }`}>
                 <div className="container px-4">
                     <div className="flex items-center justify-between">
                         {/* Logo */}
                         <div className="flex items-center space-x-8">
                             <div className="flex items-center ">
-                                <span className={`text-2xl ml-2 font-bold bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text ${isScrolled ? 'text-pink-500' : 'bg-gradient-to-r from-white to-black'
+                                <span className={`text-2xl ml-2 font-bold ${isScrolled ? 'text-pink-500' : 'text-white'
                                     }`}>
                                     Bilky Live
                                 </span>
