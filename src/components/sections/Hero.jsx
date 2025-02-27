@@ -46,7 +46,9 @@ const ModernHero = () => {
                     </div>
 
                     <div className="relative group w-full transition-all duration-300 transform hover:scale-105 flex justify-center">
-                      <img src="https://media.chingari.io/apipublic/chingari-web-assets/icons/play-store.svg" alt="Google Play" className="h-14 w-auto" />
+                      <a href="https://play.google.com/store/apps/details?id=com.bilky.bilkylive" target="_blank" rel="noopener noreferrer">
+                        <img src="https://media.chingari.io/apipublic/chingari-web-assets/icons/play-store.svg" alt="Google Play" className="h-14 w-auto" />
+                      </a>
                     </div>
 
                     <div className="relative group w-full transition-all duration-300 transform hover:scale-105 flex justify-center">
@@ -295,8 +297,8 @@ const ModernHero = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "ID Verification",
-                description: "Every profile is verified using government-issued ID",
+                title: "User Verification",
+                description: "Every profile is verified using valid mobile number",
                 icon: Shield,
                 gradient: "from-purple-500 to-purple-600"
               },
