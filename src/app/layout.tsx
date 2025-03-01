@@ -101,17 +101,31 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics Script */}
+        {/* Google Analytics Scripts */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-MWSC1NDCVX"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics-config" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-MWSC1NDCVX');
+          `}
+        </Script>
+
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11483533006"
+        />
+        <Script id="google-ads-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-11483533006');
+            gtag('event', 'conversion', {'send_to': 'AW-11483533006/qSFlCJOC64wZEM6d4-Mq'});
           `}
         </Script>
       </head>
