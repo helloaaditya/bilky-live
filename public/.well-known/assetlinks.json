@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bilky.bilkylive",
+      "sha256_cert_fingerprints": [
+        "84:68:7C:F9:2B:7E:68:1D:11:B4:89:AE:32:F1:BF:ED:D4:5D:7E:59:CB:63:01:AF:A4:C6:09:D2:F8:B1:68:AC"
+      ]
+    }
+  }
+] 
